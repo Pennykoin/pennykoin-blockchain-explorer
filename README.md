@@ -25,7 +25,7 @@ RewriteRule ^txviewer$ txviewer/index.html
 - For the nginx server
 ```bash
     location / {
-      rewrite ^/block/(.*)$ /index.php?phash=$1&module=blockchain_block;
+        rewrite ^/block/(.*)$ /index.php?phash=$1&module=blockchain_block;
   		rewrite ^/tx/(.*)$ /index.php?phash=$1&module=blockchain_transaction;
   		rewrite ^/pools$ /index.php?module=pools;
   		rewrite ^/api$ /index.php?module=api;
